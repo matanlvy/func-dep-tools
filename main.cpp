@@ -245,7 +245,7 @@ public:
         
         dep_it->getR().insert(attr_it, attr);
         
-        cout<<"Testing if attribute "<<attr<<" is right extraneous in dependency "<<*dep_it<<": "<<(isExtraneous ? "Yes" : "No")<<endl;
+        //cout<<"Testing if attribute "<<attr<<" is right extraneous in dependency "<<*dep_it<<": "<<(isExtraneous ? "Yes" : "No")<<endl;
         return isExtraneous;
     }
 
@@ -300,7 +300,7 @@ public:
         
         // Check if closure contains the attribute
         bool isExtraneous = dep_it->getR().is_subset_of(closure);        
-        cout<<"Testing if attribute "<<attr<<" is left extraneous in dependency "<<*dep_it<<": "<<(isExtraneous ? "Yes" : "No")<<endl;
+        //cout<<"Testing if attribute "<<attr<<" is left extraneous in dependency "<<*dep_it<<": "<<(isExtraneous ? "Yes" : "No")<<endl;
         
         return isExtraneous;
     }
